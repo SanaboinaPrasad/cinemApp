@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B54025620E1370F00F780DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54025520E1370F00F780DF /* AppDelegate.swift */; };
+		5B54025820E1370F00F780DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B54025720E1370F00F780DF /* ViewController.swift */; };
+		5B54025B20E1370F00F780DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B54025920E1370F00F780DF /* Main.storyboard */; };
+		5B54025D20E1371100F780DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B54025C20E1371100F780DF /* Assets.xcassets */; };
+		5B54026020E1371100F780DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B54025E20E1371100F780DF /* LaunchScreen.storyboard */; };
+		5BF5D0FA20E27924001503A8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5D0F920E27924001503A8 /* Movie.swift */; };
+		5BF5D0FC20E28439001503A8 /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5D0FB20E28439001503A8 /* RouteType.swift */; };
+		5BF5D0FE20E2854D001503A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5D0FD20E2854D001503A8 /* Constants.swift */; };
+		5BF5D10220E28DCA001503A8 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5D10120E28DCA001503A8 /* Manager.swift */; };
+		5BF5D10420E29492001503A8 /* MovieRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5D10320E29492001503A8 /* MovieRoute.swift */; };
+		5C7399F31869F3AF6A49E4E9 /* Pods_CinemApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E022A686C209641E1DABA9 /* Pods_CinemApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B54025220E1370F00F780DF /* CinemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B54025520E1370F00F780DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B54025720E1370F00F780DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B54025A20E1370F00F780DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B54025C20E1371100F780DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B54025F20E1371100F780DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B54026120E1371100F780DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF5D0F920E27924001503A8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5BF5D0FB20E28439001503A8 /* RouteType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		5BF5D0FD20E2854D001503A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5BF5D10120E28DCA001503A8 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		5BF5D10320E29492001503A8 /* MovieRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRoute.swift; sourceTree = "<group>"; };
+		5E6786D7E505A07336C2EA75 /* Pods-CinemApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CinemApp/Pods-CinemApp.release.xcconfig"; sourceTree = "<group>"; };
+		BC79B172AE01E80B9FE29C2A /* Pods-CinemApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CinemApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CinemApp/Pods-CinemApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E022A686C209641E1DABA9 /* Pods_CinemApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CinemApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B54024F20E1370F00F780DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C7399F31869F3AF6A49E4E9 /* Pods_CinemApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B54024920E1370F00F780DF = {
+			isa = PBXGroup;
+			children = (
+				5B54027020E14B4300F780DF /* UITests */,
+				5B54026F20E14B2900F780DF /* Tests */,
+				5B54025420E1370F00F780DF /* CinemApp */,
+				5B54025320E1370F00F780DF /* Products */,
+				995D723898BECF46E391EBB2 /* Pods */,
+				BEA9CBAF22F26AFB6D895A04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B54025320E1370F00F780DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B54025220E1370F00F780DF /* CinemApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B54025420E1370F00F780DF /* CinemApp */ = {
+			isa = PBXGroup;
+			children = (
+				5B54026E20E14AE700F780DF /* SupportingFiles */,
+				5B54026820E14AB900F780DF /* Networking */,
+				5B54026920E14AC200F780DF /* Controllers */,
+				5B54026720E14AB400F780DF /* Models */,
+				5B54026D20E14AE000F780DF /* Resources */,
+				5B54026C20E14AD700F780DF /* Storyboards */,
+				5B54026B20E14AD200F780DF /* Helpers */,
+				5B54026A20E14ACC00F780DF /* Views */,
+				5B54025520E1370F00F780DF /* AppDelegate.swift */,
+				5B54025720E1370F00F780DF /* ViewController.swift */,
+				5B54025920E1370F00F780DF /* Main.storyboard */,
+				5B54025C20E1371100F780DF /* Assets.xcassets */,
+				5B54025E20E1371100F780DF /* LaunchScreen.storyboard */,
+				5B54026120E1371100F780DF /* Info.plist */,
+			);
+			path = CinemApp;
+			sourceTree = "<group>";
+		};
+		5B54026720E14AB400F780DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5D0F920E27924001503A8 /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B54026820E14AB900F780DF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5D0FB20E28439001503A8 /* RouteType.swift */,
+				5BF5D10120E28DCA001503A8 /* Manager.swift */,
+				5BF5D10320E29492001503A8 /* MovieRoute.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5B54026920E14AC200F780DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B54026A20E14ACC00F780DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B54026B20E14AD200F780DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5D0FD20E2854D001503A8 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5B54026C20E14AD700F780DF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5B54026D20E14AE000F780DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B54026E20E14AE700F780DF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5B54026F20E14B2900F780DF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5B54027020E14B4300F780DF /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		995D723898BECF46E391EBB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC79B172AE01E80B9FE29C2A /* Pods-CinemApp.debug.xcconfig */,
+				5E6786D7E505A07336C2EA75 /* Pods-CinemApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEA9CBAF22F26AFB6D895A04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E022A686C209641E1DABA9 /* Pods_CinemApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B54025120E1370F00F780DF /* CinemApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B54026420E1371100F780DF /* Build configuration list for PBXNativeTarget "CinemApp" */;
+			buildPhases = (
+				AAB2ED02A95CCE8EAFCB4C62 /* [CP] Check Pods Manifest.lock */,
+				5B54024E20E1370F00F780DF /* Sources */,
+				5B54024F20E1370F00F780DF /* Frameworks */,
+				5B54025020E1370F00F780DF /* Resources */,
+				7C666E5E1AE3F6F18689AFEA /* [CP] Embed Pods Frameworks */,
+				5BF5D0F820E15CBA001503A8 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinemApp;
+			productName = CinemApp;
+			productReference = 5B54025220E1370F00F780DF /* CinemApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B54024A20E1370F00F780DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Rodrigo;
+				TargetAttributes = {
+					5B54025120E1370F00F780DF = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 5B54024D20E1370F00F780DF /* Build configuration list for PBXProject "CinemApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B54024920E1370F00F780DF;
+			productRefGroup = 5B54025320E1370F00F780DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B54025120E1370F00F780DF /* CinemApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B54025020E1370F00F780DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B54026020E1371100F780DF /* LaunchScreen.storyboard in Resources */,
+				5B54025D20E1371100F780DF /* Assets.xcassets in Resources */,
+				5B54025B20E1370F00F780DF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BF5D0F820E15CBA001503A8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		7C666E5E1AE3F6F18689AFEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CinemApp/Pods-CinemApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Decodable/Decodable.framework",
+				"${BUILT_PRODUCTS_DIR}/OperaSwift/OperaSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/XLSwiftKit/XLSwiftKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Decodable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OperaSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLSwiftKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CinemApp/Pods-CinemApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB2ED02A95CCE8EAFCB4C62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CinemApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B54024E20E1370F00F780DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF5D0FE20E2854D001503A8 /* Constants.swift in Sources */,
+				5BF5D10220E28DCA001503A8 /* Manager.swift in Sources */,
+				5B54025820E1370F00F780DF /* ViewController.swift in Sources */,
+				5BF5D10420E29492001503A8 /* MovieRoute.swift in Sources */,
+				5B54025620E1370F00F780DF /* AppDelegate.swift in Sources */,
+				5BF5D0FA20E27924001503A8 /* Movie.swift in Sources */,
+				5BF5D0FC20E28439001503A8 /* RouteType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B54025920E1370F00F780DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B54025A20E1370F00F780DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B54025E20E1371100F780DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B54025F20E1371100F780DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B54026220E1371100F780DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B54026320E1371100F780DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B54026520E1371100F780DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC79B172AE01E80B9FE29C2A /* Pods-CinemApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F2G55XL63;
+				INFOPLIST_FILE = CinemApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arsu.CinemApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B54026620E1371100F780DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6786D7E505A07336C2EA75 /* Pods-CinemApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6F2G55XL63;
+				INFOPLIST_FILE = CinemApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = arsu.CinemApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B54024D20E1370F00F780DF /* Build configuration list for PBXProject "CinemApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B54026220E1371100F780DF /* Debug */,
+				5B54026320E1371100F780DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B54026420E1371100F780DF /* Build configuration list for PBXNativeTarget "CinemApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B54026520E1371100F780DF /* Debug */,
+				5B54026620E1371100F780DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B54024A20E1370F00F780DF /* Project object */;
+}
