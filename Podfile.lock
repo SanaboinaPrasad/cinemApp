@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Decodable (0.6.0)
+  - OperaSwift (3.0.0):
+    - Alamofire (~> 4.0)
+    - RxCocoa (= 4.0.0-beta.1)
+    - RxSwift (= 4.0.0-beta.1)
+  - RxCocoa (4.0.0-beta.1):
+    - RxSwift (~> 4.0.0-beta.1)
+  - RxSwift (4.0.0-beta.1)
+  - XLSwiftKit (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Decodable (~> 0.6)
+  - OperaSwift (~> 3.0)
+  - RxCocoa
+  - RxSwift
+  - XLSwiftKit (~> 3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Decodable
+    - OperaSwift
+    - RxCocoa
+    - RxSwift
+    - XLSwiftKit
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Decodable: f0b95fa2fcf8633dd097aa8f7f09838ab3524f5d
+  OperaSwift: 636374748afdfa409ba741f518a2bd99ec4c1b8c
+  RxCocoa: ca6cc0f4453145d90002d80df8f9c83dd8fb7338
+  RxSwift: 29f07e0e72cc5b40f146c64cc520ea6a6a0c73e9
+  XLSwiftKit: b81ac73d891f780a5a316ad710757e94a71bff81
+
+PODFILE CHECKSUM: c1e7022b46eb3475890b5c6b582a117f65e09e1f
+
+COCOAPODS: 1.5.3
